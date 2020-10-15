@@ -1,5 +1,5 @@
 import produce from 'immer';
-import initialData from "../../components/lists/fixtures";
+import initialData from "../../fixtures";
 import { CHANGE_COLUMN } from '../constants';
 
 

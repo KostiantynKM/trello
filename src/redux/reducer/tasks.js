@@ -1,5 +1,5 @@
 import produce from 'immer';
-import initialData from "../../components/lists/fixtures";
+import initialData from "../../fixtures";
 import {DELETE_TASK,ADD_TASK,CHANGE_TASK} from '../constants';
 
 export default produce((draft = initialData.tasks , action) => {

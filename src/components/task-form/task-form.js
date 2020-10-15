@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import useForm from '../../../hooks/use-form';
+import useForm from '../../hooks/use-form';
 import styles from './task-form.module.css';
 import { connect } from 'react-redux';
 import Button from 'react-bootstrap/Button';
@@ -33,7 +33,7 @@ const TaskForm = ({ onSubmit , def, resetFlag }) => {
               className={styles.message}
               {...handlers.content}
           />
-            <Button type="submit" variant="outline-secondary" block  size="sm">
+            <Button type="submit" variant="secondary" block  size="sm">
               Add
             </Button>
         </Form.Group>

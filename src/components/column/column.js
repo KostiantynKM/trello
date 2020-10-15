@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 import Task from "../task";
 import styled from 'styled-components';
 import {Droppable, Draggable} from "react-beautiful-dnd";
-import TaskForm from "./task-form";
+import TaskForm from "../task-form";
 import {addTask} from "../../redux/actions";
 import PropTypes from "prop-types";
 import {createStructuredSelector} from "reselect";
@@ -54,7 +54,7 @@ const Column = ({
                     {value ? (
                         <>
                             <TaskForm droggableId={column.id} action={addTask} resetFlag={true}/>
-                            <Button size="sm" variant="outline-secondary" onClick={() => setValue(false)}>Close</Button>
+                            <Button size="sm" variant="secondary" onClick={() => setValue(false)}>Close</Button>
                         </>
                     ) : (
                         <Form.Control type="text" placeholder="Add a card..." readOnly  onClick={() => setValue(true)}/>
