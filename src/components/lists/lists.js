@@ -58,7 +58,7 @@ class Lists extends React.PureComponent {
                             ref={provided.innerRef}
                         >
                             <Header></Header>
-                            <Row>
+                            <Row xs={4} md={4}>
                             {this.props.columnOrder.map((column, index) => {
                                 return  <Column key={column} columnId={column} index={index}/>;
                             })}

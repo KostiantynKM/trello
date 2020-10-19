@@ -12,7 +12,8 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-
+import styles from './column.module.css';
+import cn from 'classnames';
 
 const TaskList = styled.div`
   transition: background-color 0.2s ease;
@@ -30,11 +31,12 @@ const Column = ({
     const [value, setValue] = useState(false);
     return (
         <Draggable draggableId={column.id} index={index}>
-            {provided => (
+            {(provided, snapshot) => (
                 <Col
                     {...provided.draggableProps}
                     ref={provided.innerRef}
-                ><Card>
+                    className={cn( { [styles.checked]: snapshot.isDragging })}
+                ><Card >
                     <Card.Header as="h5" {...provided.dragHandleProps}>{column?.title}</Card.Header>
                     <Droppable droppableId={column.id} type="task">
                         {(provided, snapshot) =>

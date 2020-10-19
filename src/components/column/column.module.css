@@ -1,11 +1,4 @@
-.container {
-  margin: 8px;
-  border: 1px solid lightgrey;
-  border-radius: 2px
-}
-.title {
-  padding: 8px;
-}
-.taskList {
-  padding: 8px;
+.checked {
+  transition: color 0.2s ease;
+  color: #3fc33f;
 }
