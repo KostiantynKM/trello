@@ -1,3 +1,25 @@
+Requirements:
+
+. The main view shall have 4 pre-defined columns: Backlog, ToDo, InProgress and
+Done.
+
+. It shall be possible to change the order of the columns by drag&drop of the
+column with its corresponding cards.
+
+. It shall be possible to add a card within each of the columns.
+
+. A saved card shall be displayed in the main view under a correct column.
+
+. It shall be possible to see card details (title, description) upon clinking
+on a card. The title and description shall be editable.
+
+. It shall be possible to reorder the cards vertically by drag&drop cards within a
+column.
+
+. It shall be possible to move the cards between the columns by drag&drop.
+
+You can see how it works live on: http://KostiantynKM.github.io/trello/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
